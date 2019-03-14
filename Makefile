@@ -1,6 +1,7 @@
 VULKAN_SDK_PATH = /home/bebop/Downloads/1.1.101.0/x86_64
 
 CFLAGS = -std=c++17 -I $(VULKAN_SDK_PATH)/include
+
 LDFLAGS = -L $(VULKAN_SDK_PATH)/lib `pkg-config --static --libs glfw3` -lvulkan
 
 VulkanTest: main.cpp
